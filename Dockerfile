@@ -10,3 +10,4 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
     rm -rf /var/cache/apk/*
 EXPOSE 8888
 #jupyter notebook --port 8888  --no-browser
+CMD ["jupyter notebook","--port 8888","--no-browser"]
